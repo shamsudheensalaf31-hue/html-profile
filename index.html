@@ -1,145 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width,initial-scale=1.0">
+
     <title>my webpage profile</title>
     
    <style>
-
+      {
+         box-sizing:border-box;
+         margin:0;
+         padding:0;
+      }
       body{
-         background:rgba(106, 167, 180, 0.714);
+         background:#b9dce3;
+         font-family: 'Segoe UI',Arial,sans-serif;
       }
       .container{
-         width:800px;
-         background:white;
+         max-width:1100px;
+         margin:25px auto;
+         display:flex;
+         background:#ffffff;
+         border-radius:14px;
+         overflow:hidden;
+         box-shadow:0 12px 30px rgba(0,0,0,0.18);
       }
       .left{
          width: 35%;
-         background: #7497b1;
-         padding:10px;
-         text-align:start;
-         float: left;
+         background:#6c95ad;
+         color:#ffffff;
+         padding:28px 24px;
       }
       .left img{
-         width:250px;
-         border-radius: 50px;
-         margin-left: 80px;
+         width:100%;
+         max-width:210px;
+         display:block;
+         margin:0 auto 22px;
+         border-radius:50%;
+         border:4px solid #ffffff;
       }
       .left h2{
-         letter-spacing:2px;
-         font-weight: bold;
-         border-bottom:8px solid rgb(115, 109, 109);
-         font-size: 45px;
+         font-size:26px;
+         margin-bottom:8px;
+         border-bottom:3px solid rgba(255,255,255,0.7);
       }
       .left h3{
-         letter-spacing:2px;
-         border-bottom:6px dotted rgb(115, 109, 109);
-         margin-top:54px ;
-         font-size: 40px;
+         margin-top:24px ;
+         font-size: 20px;
+         border-bottom:2px dotted rgba(255,255,255,0.7);
+         padding-bottom:4px;
       }
-      .left h4{
-         letter-spacing:2px;
-         border-bottom:4px solid rgb(115, 109, 109);
-         font-size: 40px;
-      }
-
-      .left p{
-         font-size: 25px;
+      .left p,
+      .left ul{
+         font-size:14.5px;
          line-height: 1.7;
-         font-family: Arial, sans-serif;
+         margin-top:8px;
       }
       .left ul{
-         font-size: 25px;
-         line-height: 1.7;
-         font-family: Verdana, sans-serif;
-         list-style-type: circle;
+         padding-left:18px;
       }
-      .left h5{
-         font-size:25px;
+      .left a{
+         color:#0a2f44;
+         font-weight:600;
+         text-decoration:none;
+         font-size:14.5px;
+      }
+      .left a:hover{
+         text-decoration:underline;
       }
 
       .right{
-         width:62%;
-         background:rgba(106, 167, 180, 0.714);
-         padding: 10px;
-         text-align:start;
-         float: left;
+         width:65%;
+         background:#d7edf0;
+         padding:32px;
       }
       .right h1{
-         font-size: 70px;
-         margin-top:90px; 
-         font-weight: bolder;
-         color: #244d6c;
+         font-size:36px;
+         color: #21465f;
+         letter-spacing:0.8px;
       }
       .right h4{
-         border-bottom:9px double rgb(115, 109, 109);
-         color: rgb(79, 90, 140);
-         font-size: 35px;
-
+         font-size:20px;
+         margin-top:6px;
+         padding-bottom:8px;
+         border-bottom:3px double #6b6b6b;
       }
       .right h3{
-         margin-top:110px ;
-         letter-spacing: 2px;
-         font-weight: bold;
-         border-bottom:6px dotted rgb(115, 109, 109);
-         font-size: 40px;
+         margin-top:30px;
+         font-size:23px;
+         border-bottom:2px dotted #555;
+         padding-bottom:5px;
       }
-      .right p{
-         font-size: 25px;
-         line-height:1.7;
-         font-family: Arial, sans-serif;
-      }
-      .right table,th,tr,td{
-         border:2px solid;
-         background-color: #7497b1;
-         border-collapse: collapse;
-         border-color:rgb(115, 109, 109);
-         width: 60%;
-         text-align: center;
-         font-size:25px;
+      .right p,
+      .right ul{
+         font-size:15.5px;
+         line-height:1.75;
+         margin-top:8px;
       }
       .right ul{
-         list-style: circle;
-         font-size: 25px;
-         line-height: 1.7;
-         font-family: Verdana, sans-serif;
+         padding-left:20px;
+      }
+      table{
+         width:100%;
+         margin-top:12px;
+         border-collapse:collapse;
+         background:#89b1c6;
+      }
+      th{
+         font-size:15px;
+         padding:9px;
+      }
+      td{
+         font-size:14.5px;
+         padding:8px;
+      }
+      th,td{
+         border:2px solid #4f4f4f;
+         text-align:center;
+      }
+      @media(max-width:768px){
+         .left{width:40%;}
+         .right{width:60%;}
+
+         .right h1{font-size:26px;}
+         .right h4{font-size:18px;}
+         .right h3{font-size:20px;}
+
+         .left h2{font-size:22px;}
+         .left h3{font-size:18px;}
+
+         .left p,
+         .right p,
+         .left ul,
+         .right ul{
+            font-size:13.5px;
+         }
+
+         th{font-size:13.5px;}
+         td{font-size:13px;}
       }
    </style>
 </head>
 
 
 <body>
-   <div class="body">
+   <div class="container">
      <div class="left">
-      <img src="rina.jpg"> 
+      <img src="rina.jpg" alt="Profile Photo"> 
 
       <h2>PROFILE</h2>
-      <P>
-      <b>First year Btech student|Electronics and Communication Engineering|Student 
+      <P><b>
+      First year Btech student|Electronics and Communication Engineering|Student 
       at GEC Kozhikode|Exploring the world of innovation in technology ,programming 
-      and circuit design</b>
-      </P>
+      and circuit design
+      </b></P>
 
       <h3>CONTACT </h3>
-      <P style="font-size: 25px;line-height: 1.7;font-family: Verdana, sans-serif;"><b>&#128222;Phone</b>:9497810065<br>
+      <P><b>&#128222;Phone</b>:9497810065<br>
       <b>&#9993;Email</b>:rinaariyallur@gmail.com<br><b>&#128205;Location</b>:malappuram,kerala<br>
-         <a href="https://geckkd.ac.in">Government Engineering College Kozhikode</a>
+         <a href="https://geckkd.ac.in">GEC Kozhikode</a>
       </P>
 
       <h3>TECHNICAL SKILLS</h3>
       <ul>
-      <dl>
-         <li><dt>Programming languages</dt></li>
-         <dd>-Python(basic level)<br>-C(basic level)<br>-Matlab(basic simulation)</dd>
-      </dl>
-      <dl>
-         <li><dt>Electronic tools & Software</dt></li>
-         <dd>-Arduino IDE</dd>
-      </dl>
-      <dl>
-         <li><dt>Core concepts</dt></li>
-         <dd>-Elecronic circuit & devices<br>-Digital logic design<br>-Signal processing fundamentals<br>-Communication systems<br>-Microcontrollers<br>-Sensors</dd>
-      </dl>
+      <li>Python(basic)</li>
+      <li>C(basic)</li>
+      <li>Arduino IDE(basic)</li>
+      <li>Electronic circuit & devices</li>
       </ul> 
 
       <h3>SOFT SKILLS</h3>
@@ -148,7 +175,6 @@
       <li>Teamwork</li>
       <li>Research skill</li>
       <li>Analytical skill</li>
-      <li>Presentation skill </li>
       <li>Project management</li>
       <li>Leadership & Communication</li>
       <li>Creativity & Innovation</li>
@@ -165,7 +191,7 @@
       <li>Arabic</li>
       </ul>
       
-      <h4>SOCIAL HANDLES</h4>
+      <h3>SOCIAL HANDLES</h3>
       <a href="https://www.linkedin.com/in/fathima-rina-p-5b7073386?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><h5>LinkedIn</h5></a>
      </div>  
 
@@ -176,9 +202,9 @@
 
       <h3>ABOUT ME</h3>
       <P>
-         I am <b>First year Electronics and Communication Engineering student</b> at 
+         <b>First year Electronics and Communication Engineering student</b> at 
          <b>Government Engineering College Kozhikode</b>.Keen to explore the fields of
-         embedded system,IOT,robotics,and communication networks.Looking forward 
+         embedded system,robotics,and communication networks.Looking forward 
          to opportunities that allow me to apply my academic knowledge,strengthen
          my technical foundation ,and team projects .I am  aim to contribute to
          the advancement of smart technology solutions while developing as a
@@ -187,18 +213,18 @@
 
       <h3>EXPERIENCE</h3>
       <ul>
-       <li><b>ISTE</b> GEC Kozhikode student chapter -member</li> 
-       <li><b>TinkerHub</b> GEC Kozhikode -member</li> 
-       <li><b>VIBE-IEDC|IIC|TBI</b> GECK-member</li> 
-       <li><b>MuLearn</b> GECK-member</li> 
+       <li><b>ISTE</b>-member</li> 
+       <li><b>TinkerHub</b>-member</li> 
+       <li><b>VIBE-IEDC|IIC|TBI</b>-member</li> 
+       <li><b>MuLearn</b>-member</li> 
       </ul>
 
       <h3>EDUCATION</h3>
       <table>
-         <th><b>Education</b></th>   
-         <th><b>institution</b></th>   
-         <th><b>year</b></th> 
-         <th><b>percentage</b></th> 
+         <th><b>Course</b></th>   
+         <th><b>Institution</b></th>   
+         <th><b>Year</b></th> 
+         <th><b>Percentage</b></th> 
          <tr>
             <td>BTech ECE</td>
             <td>GEC Kozhikode</td>
@@ -223,28 +249,21 @@
       <h3>VOLUNTEER EXPERIENCE</h3>
       <ul>
          <li><b>NSS</b> volunteer<br>
-         2021-2023
+         (2021-2023)
          MVHSS Ariyallur</li>
       </ul>
-
-      <h3>HOBBIES</h3>
-      <ul>
-         <li>Drawing</li>
-         <li>Travelling</li>
-         <li>Reading</li>
-      </ul>
-
       <h3>WORKSHOPS & SEMINARS</h3>
       <ul>
          <li>'Buid your portfolio'session initiated by <b>TinkerHub</b> about building our own portfolio</li>
          <li>Workshop on introduction to microcontrollers and sensors initiated by <b>IEEE</b> student branch</li>
          <li>Micromentoring program on basics of programming initiated by <b>IEEE</b> student branch</li>
       </ul>
+      <h3>HOBBIES</h3>
       <ul>
-      <h3>INTERNSHIP</h3>
-      <li>Internship with MNC NeST Digital</li>
+         <li>Drawing</li>
+         <li>Travelling</li>
+         <li>Reading</li>
       </ul>
-
       </div>
    </div>
 </body>
